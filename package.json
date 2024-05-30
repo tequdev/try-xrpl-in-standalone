@@ -1,0 +1,16 @@
+{
+  "name": "try-xrpl-in-standalone",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsx index.ts",
+    "xrpld:start": "xrpld-netgen up:standalone --protocol xrpl --version 2.1.1",
+    "xrpld:stop": "xrpld-netgen down:standalone --protocol xrpl --version 2.1.1",
+    "log": "docker logs --tail 100 -f"
+  },
+  "dependencies": {
+    "tsx": "^4.11.0",
+    "xrpl": "^3.0.0"
+  }
+}
